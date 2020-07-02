@@ -1,0 +1,1 @@
+[globals().update({"bot": __import__("pyrogram").Client("sos", bot_token = "token here", api_id = 12345, api_hash = ""), "start": lambda bot, msg: print(msg.text)}), bot.add_handler(__import__("pyrogram").MessageHandler(start, __import__("pyrogram").Filters.text)), globals()["bot"].run()]
